@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8"/> 
+        <style>
+            body{
+                box-sizing: border-box;
+                background-color: #EEE; }
+            #container{
+                position: relative;
+                width: 600px;
+                height: 600px;
+                border: 1px solid #CCC;
+                margin: 0 auto; 
+                background-color: #FFF;
+            }
+            #rouge, #vert, #bleu{
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                text-align: center;
+            }
+            #rouge{
+                width: 200px;
+                height: 200px;
+                background-color: #F00; 
+            }
+            #vert{
+                width: 100px;
+                height: 100px;
+                background-color: #0F0;
+            }
+            #bleu{
+                width: 50px;
+                height: 50px;
+                background-color: #00F;
+            }
+        </style> 
+    </head>
+    <body>
+        <div id="container">
+            <div id="rouge" class="box">ROUGE</div> 
+            <div id="vert">VERT</div> 
+            <div id="bleu"class="left">BLEU</div>
+        </div> 
+    </body>
+</html>
+
+    <!-- 
+        position :absolute|relative|fixed;
+        float: left|right
+        z-index: XXX (une valeur numérique)
+        top|right|bottom|left: XXpx 
+        display: flex;  
+        position: absolute;
+        align-items: center; // centrer les box
+        object-fit: cover;
+    -->
